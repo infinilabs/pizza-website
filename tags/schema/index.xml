@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>schema on INFINI Pizza</title><link>/tags/schema/</link><description>Recent content in schema on INFINI Pizza</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/schema/index.xml" rel="self" type="application/rss+xml"/><item><title>Get collection schema</title><link>/docs/references/collection/get_schema/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_schema/</guid><description>Get collection schema # Returns schema information about one or more collections.
+Examples # The following request gets the schema information of all the collections under the default namespace:
+GET /default:*/_schema Retrieve the schema information of all the collections:
+GET /_schema Request # GET /&amp;lt;target&amp;gt;/_schema Path Parameters # target
+(Optional, String) Comma-separated, names of the collections to get (wildcard supported)</description></item></channel></rss>
