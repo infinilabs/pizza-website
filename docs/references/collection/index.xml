@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Collection on INFINI Pizza</title><link>/docs/references/collection/</link><description>Recent content in Collection on INFINI Pizza</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/references/collection/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a collection</title><link>/docs/references/collection/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/create/</guid><description>Create a collection # Creates a new collection.
+Examples # The following request creates a new collection called my-collection in the namespace my-namespace:
+PUT /my-namespace:my-collection If creating a collection within the default namespace, it can be simplified as:
+PUT /my-collection Request # PUT /[&amp;lt;namespace&amp;gt;:]&amp;lt;name&amp;gt; Path parameters # &amp;lt;namespace&amp;gt;
+(Optional, string) The namespace which the collection belongs to. Namespace names must meet the following criteria: Lowercase only Cannot include \ /, *, ?</description></item><item><title>Delete a collection</title><link>/docs/references/collection/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/delete/</guid><description>Delete a collection # Delete a exists collection.
+Examples # The following request deletes the collection called my-collection:
+DELETE my-collection Request # PUT /[&amp;lt;namespace&amp;gt;:]&amp;lt;name&amp;gt; Path Parameters # &amp;lt;namespace&amp;gt;
+(Optional, string) The namespace which the collection belongs to. &amp;lt;name&amp;gt;
+(Required, string) Name of the collection you wish to create.</description></item><item><title>Get collection</title><link>/docs/references/collection/get/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get/</guid><description>Get collection # Returns information about one or more collections.
+Examples # The following request gets all the collections under the default namespace:
+GET /default:* Request # GET /&amp;lt;target&amp;gt; Path Parameters # target
+(Required, String) Comma-separated, names of the collections to get (wildcard supported)</description></item><item><title>Get collection index</title><link>/docs/references/collection/get_index/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_index/</guid><description>Get collection index # See the following documents:
+Get index Get index alias Get index mapping Get index settings</description></item><item><title>Get collection rollings</title><link>/docs/references/collection/get_rollings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_rollings/</guid><description>Get collection rollings # Returns rollings information about one or more collections.
+Examples # The following request gets the rollings information of all the collections under the default namespace:
+GET /default:*/_rollings Retrieve the rollings information of all the collections:
+GET /_rollings Request # GET /&amp;lt;target&amp;gt;/_rollings Path Parameters # target
+(Optional, String) Comma-separated, names of the collections to get (wildcard supported)</description></item><item><title>Get collection schema</title><link>/docs/references/collection/get_schema/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_schema/</guid><description>Get collection schema # Returns schema information about one or more collections.
+Examples # The following request gets the schema information of all the collections under the default namespace:
+GET /default:*/_schema Retrieve the schema information of all the collections:
+GET /_schema Request # GET /&amp;lt;target&amp;gt;/_schema Path Parameters # target
+(Optional, String) Comma-separated, names of the collections to get (wildcard supported)</description></item><item><title>Get collection settings</title><link>/docs/references/collection/get_settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_settings/</guid><description>Get collection settings # Returns settings information about one or more collections.
+Examples # The following request gets the settings information of all the collections under the default namespace:
+GET /default:*/_settings Retrieve the settings information of all the collections:
+GET /_settings Request # GET /&amp;lt;target&amp;gt;/_settings Path Parameters # target
+(Optional, String) Comma-separated, names of the collections to get (wildcard supported)</description></item></channel></rss>
