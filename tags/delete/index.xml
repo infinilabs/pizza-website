@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>delete on INFINI Pizza</title><link>/tags/delete/</link><description>Recent content in delete on INFINI Pizza</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/delete/index.xml" rel="self" type="application/rss+xml"/><item><title>Delete an index</title><link>/docs/references/index/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/index/delete/</guid><description>Delete an index # Deletes an existing index under a collectioin.
+Examples # The following request deletes the index called my-index under collection my-namespace:my-collection
+DELETE /my-namespace:my-collection/_index/my_index Request # DELETE /&amp;lt;target&amp;gt;/_index/&amp;lt;name&amp;gt; Path parameters # &amp;lt;target&amp;gt;
+(Required, string) The collection which the index will be removed from.
+&amp;lt;name&amp;gt;
+(Required, string) Name of the index you wish to delete.</description></item><item><title>Delete a collection</title><link>/docs/references/collection/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/delete/</guid><description>Delete a collection # Delete a exists collection.
+Examples # The following request deletes the collection called my-collection:
+DELETE my-collection Request # PUT /[&amp;lt;namespace&amp;gt;:]&amp;lt;name&amp;gt; Path Parameters # &amp;lt;namespace&amp;gt;
+(Optional, string) The namespace which the collection belongs to. &amp;lt;name&amp;gt;
+(Required, string) Name of the collection you wish to create.</description></item><item><title>Delete a namespace</title><link>/docs/references/namespace/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/namespace/delete/</guid><description>Delete a namespace # Delete a exists namespace.
+Examples # The following request delete the namespace called website:
+DELETE /_namespace/website Request # DELETE /_namespace/&amp;lt;name&amp;gt; Path parameters # &amp;lt;name&amp;gt;
+(Optional, string) The name of the namespace that you want to delete.</description></item><item><title>Delete a document</title><link>/docs/references/document/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/document/delete/</guid><description>Delete a document # Delete a specific document from the specified collection by specifying its unique identifier.
+Examples # Delete the document 0,0 from collection my-collection:
+DELETE /my-collection/_doc/0,0 The API returns the following result:
+{ &amp;#34;_id&amp;#34;: &amp;#34;0,0&amp;#34;, &amp;#34;result&amp;#34;: &amp;#34;deleted&amp;#34;, ... } Request # DELETE /&amp;lt;target&amp;gt;/_doc/&amp;lt;doc_id&amp;gt; Path parameters # &amp;lt;target&amp;gt;
+(Required, string) Name of the collection to target. &amp;lt;doc_id&amp;gt;
+(Required, string) Unique identifier for the document, support both _key or _id.</description></item></channel></rss>

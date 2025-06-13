@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>settings on INFINI Pizza</title><link>/tags/settings/</link><description>Recent content in settings on INFINI Pizza</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/settings/index.xml" rel="self" type="application/rss+xml"/><item><title>Get collection settings</title><link>/docs/references/collection/get_settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/get_settings/</guid><description>Get collection settings # Returns settings information about one or more collections.
+Examples # The following request gets the settings information of all the collections under the default namespace:
+GET /default:*/_settings Retrieve the settings information of all the collections:
+GET /_settings Request # GET /&amp;lt;target&amp;gt;/_settings Path Parameters # target
+(Optional, String) Comma-separated, names of the collections to get (wildcard supported)</description></item></channel></rss>

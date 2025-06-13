@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>create on INFINI Pizza</title><link>/tags/create/</link><description>Recent content in create on INFINI Pizza</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/create/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a collection</title><link>/docs/references/collection/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/collection/create/</guid><description>Create a collection # Creates a new collection.
+Examples # The following request creates a new collection called my-collection in the namespace my-namespace:
+PUT /my-namespace:my-collection If creating a collection within the default namespace, it can be simplified as:
+PUT /my-collection Request # PUT /[&amp;lt;namespace&amp;gt;:]&amp;lt;name&amp;gt; Path parameters # &amp;lt;namespace&amp;gt;
+(Optional, string) The namespace which the collection belongs to. Namespace names must meet the following criteria: Lowercase only Cannot include \ /, *, ?</description></item><item><title>Create a document</title><link>/docs/references/document/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/document/create/</guid><description>Create a document # Creates a new document.
+Examples # Insert a JSON document into the my-collection collection:
+POST /my-collection/_doc { &amp;#34;message&amp;#34;: &amp;#34;GET /search HTTP/1.1 200 1070000&amp;#34;, &amp;#34;org&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;infini&amp;#34; } } The API returns the following result:
+{ &amp;#34;_id&amp;#34;: &amp;#34;0,0&amp;#34;, &amp;#34;_version&amp;#34;: 1, &amp;#34;_namespace&amp;#34;: &amp;#34;default&amp;#34;, &amp;#34;_collection&amp;#34;: &amp;#34;my-collection&amp;#34;, &amp;#34;result&amp;#34;: &amp;#34;created&amp;#34;, ... } The API supports passing a customized UUID as the document identify, eg:
+POST /my-collection/_doc/news_001 { &amp;#34;message&amp;#34;: &amp;#34;GET /search HTTP/1.</description></item><item><title>Create a namespace</title><link>/docs/references/namespace/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/namespace/create/</guid><description>Create a namespace # Creates a new namespace.
+Examples # If creating a website namespace, the following request creates a new namespace called website:
+PUT /_namespace/website Request # PUT /_namespace/&amp;lt;name&amp;gt; Path parameters # &amp;lt;name&amp;gt;
+(Required, string) The name of the namespace. Namespace names must meet the following criteria: Lowercase only Cannot include \ /, *, ?, &amp;quot;, &amp;lt;, &amp;gt;, |, , ,, # Cannot start with -, _, + Cannot be .</description></item><item><title>Create an index</title><link>/docs/references/index/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/references/index/create/</guid><description>Create an index # Creates a new index under a collectioin.
+Examples # The following request creates a new index called my-index under collection my-namespace:my-collection
+PUT /my-namespace:my-collection/_index/my_index Request # PUT /&amp;lt;target&amp;gt;/_index/&amp;lt;name&amp;gt; Path parameters # &amp;lt;target&amp;gt;
+(Required, string) The collection which the index belongs to.
+&amp;lt;name&amp;gt;
+(Required, string) Name of the index you wish to create.</description></item></channel></rss>
